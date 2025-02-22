@@ -19,8 +19,7 @@ return new class extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
             $table->text('caption');
-            $table->string('image')->nullable();
-            $table->string('video')->nullable();
+            $table->string('image_video')->nullable();
             $table->timestamps();
         });
 
